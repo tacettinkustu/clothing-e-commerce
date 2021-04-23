@@ -32,7 +32,7 @@ export default class Directory extends Component {
           size: "large",
           id: 4,
           linkUrl: "shop/womens",
-          size: "large",
+          sizing: "large"
         },
         {
           title: "mens",
@@ -40,7 +40,7 @@ export default class Directory extends Component {
           size: "large",
           id: 5,
           linkUrl: "shop/mens",
-          size: "large",
+          sizing: "large"
         },
       ],
     };
@@ -53,7 +53,8 @@ export default class Directory extends Component {
             key={section.id}
             title={section.title}
             imageUrl={section.imageUrl}
-            size={section.size}
+            size={section.sizing}
+            linkUrl={section.linkUrl}
           ></MenuItem>
         ))}
       </div>
